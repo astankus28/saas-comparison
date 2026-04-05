@@ -1,0 +1,26 @@
+[
+  {
+    "id": "gohighlevel",
+    "name": "GoHighLevel",
+    "price": 97,
+    "commission": "40% Lifetime",
+    "bestFor": "All-in-One Marketing & CRM",
+    "link": "YOUR_GHL_LINK"
+  },
+  {
+    "id": "writesonic",
+    "name": "Writesonic",
+    "price": 29,
+    "commission": "30% Lifetime",
+    "bestFor": "SEO Content & AI Writing",
+    "link": "YOUR_WRITESONIC_LINK"
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper AI",
+    "price": 59,
+    "commission": "30% Recurring",
+    "bestFor": "Enterprise Brand Voice",
+    "link": "YOUR_JASPER_LINK"
+  }
+]
