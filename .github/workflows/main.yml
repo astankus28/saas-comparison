@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Optional: Repository variable SITE_URL (https://yourdomain.com) for absolute sitemap/canonicals.
+    env:
+      SAAS_SCOUTER_SITE_URL: ${{ vars.SITE_URL }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
