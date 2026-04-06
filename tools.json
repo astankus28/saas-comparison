@@ -1,65 +1,76 @@
 [
   {
+    "id": "gohighlevel",
     "name": "GoHighLevel",
     "price": "$97/mo",
     "link": "https://www.gohighlevel.com/?fp_ref=fshj5z",
     "features": "CRM, Funnels, White-label"
   },
   {
+    "id": "writesonic",
     "name": "Writesonic",
     "price": "$12/mo",
     "link": "https://google.com",
     "features": "AI Writing, SEO, Chatbots"
   },
   {
+    "id": "jasper",
     "name": "Jasper",
     "price": "$39/mo",
     "link": "https://google.com",
     "features": "Enterprise AI, Brand Voice"
   },
   {
+    "id": "canva",
     "name": "Canva",
     "price": "$15/mo",
     "link": "https://google.com",
     "features": "Design, Video, Magic Studio"
   },
   {
+    "id": "hubspot",
     "name": "HubSpot",
     "price": "$20/mo",
     "link": "https://google.com",
     "features": "Sales CRM, Marketing Hub"
   },
   {
+    "id": "surferseo",
     "name": "SurferSEO",
     "price": "$89/mo",
     "link": "https://google.com",
     "features": "Content Editor, Keyword Research"
   },
   {
+    "id": "systemeio",
     "name": "Systeme.io",
     "price": "$27/mo",
     "link": "https://google.com",
     "features": "Email Marketing, Funnel Builder"
   },
   {
+    "id": "copyai",
     "name": "Copy.ai",
     "price": "$36/mo",
     "link": "https://google.com",
     "features": "GTM Automations, Workflows"
   },
   {
+    "id": "descript",
     "name": "Descript",
     "price": "$15/mo",
     "link": "https://google.com",
     "features": "AI Video Editing, Transcription"
   },
   {
+    "id": "claude",
     "name": "Claude",
     "price": "$20/mo",
     "link": "https://google.com",
     "features": "Advanced Writing, Long Context"
   },
   {
+    "id": "midjourney",
     "name": "Midjourney",
     "price": "$10/mo",
     "link": "https://google.com",
