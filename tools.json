@@ -3,6 +3,7 @@
     "id": "gohighlevel",
     "name": "GoHighLevel",
     "price": "$97/mo",
+    "bestFor": "All-in-One Marketing",
     "link": "https://www.gohighlevel.com/?fp_ref=fshj5z",
     "features": "CRM, Funnels, White-label"
   },
@@ -10,6 +11,7 @@
     "id": "writesonic",
     "name": "Writesonic",
     "price": "$12/mo",
+    "bestFor": "SEO Content Writing",
     "link": "https://google.com",
     "features": "AI Writing, SEO, Chatbots"
   },
@@ -17,6 +19,7 @@
     "id": "jasper",
     "name": "Jasper",
     "price": "$39/mo",
+    "bestFor": "Enterprise Brand Voice",
     "link": "https://google.com",
     "features": "Enterprise AI, Brand Voice"
   },
@@ -24,6 +27,7 @@
     "id": "canva",
     "name": "Canva",
     "price": "$15/mo",
+    "bestFor": "Visual Design",
     "link": "https://google.com",
     "features": "Design, Video, Magic Studio"
   },
@@ -31,12 +35,14 @@
     "id": "hubspot",
     "name": "HubSpot",
     "price": "$20/mo",
+    "bestFor": "Scaling SMBs",
     "link": "https://google.com",
     "features": "Sales CRM, Marketing Hub"
   },
   {
     "id": "surferseo",
     "name": "SurferSEO",
+    "bestFor": "On-Page Optimization",
     "price": "$89/mo",
     "link": "https://google.com",
     "features": "Content Editor, Keyword Research"
@@ -45,6 +51,7 @@
     "id": "systemeio",
     "name": "Systeme.io",
     "price": "$27/mo",
+    "bestFor": "Budget-Friendly Funnels",
     "link": "https://google.com",
     "features": "Email Marketing, Funnel Builder"
   },
@@ -52,6 +59,7 @@
     "id": "copyai",
     "name": "Copy.ai",
     "price": "$36/mo",
+    "bestFor": "Sales Teams",
     "link": "https://google.com",
     "features": "GTM Automations, Workflows"
   },
@@ -59,6 +67,7 @@
     "id": "descript",
     "name": "Descript",
     "price": "$15/mo",
+    "bestFor": "Video Creators",
     "link": "https://google.com",
     "features": "AI Video Editing, Transcription"
   },
@@ -66,6 +75,7 @@
     "id": "claude",
     "name": "Claude",
     "price": "$20/mo",
+    "bestFor": "Advanced Writing",
     "link": "https://google.com",
     "features": "Advanced Writing, Long Context"
   },
@@ -73,6 +83,7 @@
     "id": "midjourney",
     "name": "Midjourney",
     "price": "$10/mo",
+    "bestFor": "AI Art Generation",
     "link": "https://google.com",
     "features": "AI Image Generation"
   }
