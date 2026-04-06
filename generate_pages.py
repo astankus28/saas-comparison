@@ -14,8 +14,8 @@ from datetime import date
 LAST_REVIEWED = "April 2026"
 SITE_NAME = "SaaS Scouter"
 AUTHOR = "Andrew Stankus"
-# Set to your live origin for sitemap + canonicals, e.g. https://yoursite.com
-BASE_URL = os.environ.get("SAAS_SCOUTER_SITE_URL", "").rstrip("/")
+# Filled in main() from env (SAAS_SCOUTER_SITE_URL or CI SITE_URL) or site.json.
+BASE_URL = ""
 
 # Extra high-intent pairs that span categories (not random cross-sells).
 BRIDGE_PAIRS = [
@@ -46,6 +46,27 @@ CATEGORY_META = {
         "blurb": "Edit by transcript, clean audio, and ship episodes and clips faster.",
     },
 }
+
+
+def resolve_base_url(repo_root: str) -> str:
+    """Absolute site origin for canonicals, Open Graph, and sitemap (no trailing slash)."""
+    env = os.environ.get("SAAS_SCOUTER_SITE_URL", "").strip().rstrip("/")
+    if env:
+        return env
+    site_json = os.path.join(repo_root, "site.json")
+    if os.path.isfile(site_json):
+        with open(site_json, encoding="utf-8") as f:
+            data = json.load(f)
+        return str(data.get("base_url", "")).strip().rstrip("/")
+    return ""
+
+
+def cta_url(tool: dict) -> str:
+    """Outbound CTA: affiliate_link when set, otherwise vendor link."""
+    aff = tool.get("affiliate_link")
+    if isinstance(aff, str) and aff.strip():
+        return aff.strip()
+    return tool["link"]
 
 
 def esc(s: str) -> str:
@@ -214,13 +235,13 @@ def render_comparison_page(
         <h2 class="text-lg font-semibold text-slate-900 mb-1">{esc(name1)}</h2>
         <p class="text-sm text-slate-500 mb-4">{esc("Starts around " + t1["price"])}</p>
         <p class="text-slate-600 text-sm leading-relaxed mb-6">{esc(t1["verdict"].capitalize())}</p>
-        <a href="{esc(t1["link"])}" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">Visit {esc(name1)} <span aria-hidden="true">→</span></a>
+        <a href="{esc(cta_url(t1))}" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">Visit {esc(name1)} <span aria-hidden="true">→</span></a>
       </div>
       <div class="rounded-2xl border border-slate-200 p-6 shadow-sm">
         <h2 class="text-lg font-semibold text-slate-900 mb-1">{esc(name2)}</h2>
         <p class="text-sm text-slate-500 mb-4">{esc("Starts around " + t2["price"])}</p>
         <p class="text-slate-600 text-sm leading-relaxed mb-6">{esc(t2["verdict"].capitalize())}</p>
-        <a href="{esc(t2["link"])}" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">Visit {esc(name2)} <span aria-hidden="true">→</span></a>
+        <a href="{esc(cta_url(t2))}" target="_blank" rel="noopener sponsored" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">Visit {esc(name2)} <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
@@ -305,7 +326,7 @@ def render_hub(
              <h3 class="font-semibold text-slate-900">{esc(t["name"])}</h3>
              <p class="text-sm text-slate-500 mt-1">{esc(t["bestFor"])}</p>
              <p class="text-sm text-slate-600 mt-3">{esc(t["price"])}</p>
-             <a class="mt-4 inline-flex text-blue-600 text-sm font-semibold hover:underline" href="{esc(t["link"])}" target="_blank" rel="noopener sponsored">Visit site →</a>
+             <a class="mt-4 inline-flex text-blue-600 text-sm font-semibold hover:underline" href="{esc(cta_url(t))}" target="_blank" rel="noopener sponsored">Visit site →</a>
            </li>"""
         )
     compare_links = []
@@ -451,7 +472,7 @@ def render_index(
     <section class="rounded-2xl border border-amber-200 bg-amber-50/60 p-6 sm:p-8">
       <h2 class="text-sm font-bold uppercase tracking-widest text-amber-900/70 mb-2">Affiliate disclosure</h2>
       <p class="text-slate-800 leading-relaxed">
-        Links may be affiliate links. We only make money if you choose to buy—our writeups call out tradeoffs either way. Replace any “visit site” link in <code class="text-xs bg-white px-1 py-0.5 rounded border">tools.json</code> with your program URLs when you get accepted.
+        Links may be affiliate links. We only make money if you choose to buy—our writeups call out tradeoffs either way. Add optional <code class="text-xs bg-white px-1 py-0.5 rounded border">affiliate_link</code> per product in <code class="text-xs bg-white px-1 py-0.5 rounded border">tools.json</code> (CTA buttons use that; <code class="text-xs bg-white px-1 py-0.5 rounded border">link</code> stays the clean homepage when you want separation).
       </p>
     </section>
 
@@ -511,8 +532,10 @@ def cleanup_old_comparisons(keep: set[str]) -> None:
 
 
 def main() -> None:
+    global BASE_URL
     root = os.path.dirname(os.path.abspath(__file__))
     os.chdir(root)
+    BASE_URL = resolve_base_url(root)
 
     with open("tools.json", encoding="utf-8") as f:
         tools = json.load(f)

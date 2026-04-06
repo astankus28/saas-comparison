@@ -1,0 +1,4 @@
+{
+  "base_url": "https://astankus28.github.io/saas-comparison",
+  "_comment": "Public origin for canonical, og:url, and sitemap. Override with env SAAS_SCOUTER_SITE_URL or GitHub Actions variable SITE_URL (takes precedence). Use your custom domain here when you add one."
+}
