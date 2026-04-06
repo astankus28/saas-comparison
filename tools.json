@@ -1,26 +1,68 @@
 [
   {
-    "id": "gohighlevel",
     "name": "GoHighLevel",
-    "price": 97,
-    "commission": "40% Lifetime",
-    "bestFor": "All-in-One Marketing & CRM",
-    "link": "YOUR_GHL_LINK"
+    "price": "$97/mo",
+    "link": "https://www.gohighlevel.com/?fp_ref=fshj5z",
+    "features": "CRM, Funnels, White-label"
   },
   {
-    "id": "writesonic",
     "name": "Writesonic",
-    "price": 29,
-    "commission": "30% Lifetime",
-    "bestFor": "SEO Content & AI Writing",
-    "link": "YOUR_WRITESONIC_LINK"
+    "price": "$12/mo",
+    "link": "https://google.com",
+    "features": "AI Writing, SEO, Chatbots"
   },
   {
-    "id": "jasper",
-    "name": "Jasper AI",
-    "price": 59,
-    "commission": "30% Recurring",
-    "bestFor": "Enterprise Brand Voice",
-    "link": "YOUR_JASPER_LINK"
+    "name": "Jasper",
+    "price": "$39/mo",
+    "link": "https://google.com",
+    "features": "Enterprise AI, Brand Voice"
+  },
+  {
+    "name": "Canva",
+    "price": "$15/mo",
+    "link": "https://google.com",
+    "features": "Design, Video, Magic Studio"
+  },
+  {
+    "name": "HubSpot",
+    "price": "$20/mo",
+    "link": "https://google.com",
+    "features": "Sales CRM, Marketing Hub"
+  },
+  {
+    "name": "SurferSEO",
+    "price": "$89/mo",
+    "link": "https://google.com",
+    "features": "Content Editor, Keyword Research"
+  },
+  {
+    "name": "Systeme.io",
+    "price": "$27/mo",
+    "link": "https://google.com",
+    "features": "Email Marketing, Funnel Builder"
+  },
+  {
+    "name": "Copy.ai",
+    "price": "$36/mo",
+    "link": "https://google.com",
+    "features": "GTM Automations, Workflows"
+  },
+  {
+    "name": "Descript",
+    "price": "$15/mo",
+    "link": "https://google.com",
+    "features": "AI Video Editing, Transcription"
+  },
+  {
+    "name": "Claude",
+    "price": "$20/mo",
+    "link": "https://google.com",
+    "features": "Advanced Writing, Long Context"
+  },
+  {
+    "name": "Midjourney",
+    "price": "$10/mo",
+    "link": "https://google.com",
+    "features": "AI Image Generation"
   }
 ]
