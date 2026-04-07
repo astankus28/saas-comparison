@@ -10,7 +10,15 @@
     "features": "CRM, Funnels, White-label, SMS Automation",
     "pros": "Replaces 5+ tools; unlimited client sub-accounts; powerful white-labeling for agencies.",
     "cons": "Steep learning curve; basic scheduling features; occasional UI bugs.",
-    "verdict": "the ultimate choice for agencies wanting to consolidate their tech stack and resell software."
+    "verdict": "the ultimate choice for agencies wanting to consolidate their tech stack and resell software.",
+    "scores": {
+      "value": 9.2,
+      "ease_of_use": 5.5,
+      "features": 9.8,
+      "support": 7.5
+    },
+    "pick_if": "You run a marketing or SMMA agency and want to white-label your own software platform.",
+    "avoid_if": "You're a solo user or small business — the learning curve and price don't make sense below agency scale."
   },
   {
     "id": "writesonic",
@@ -22,7 +30,15 @@
     "features": "AI Articles, SEO Optimizer, Real-time Search",
     "pros": "Built-in SEO optimization; very affordable entry price; pulls live Google data for accuracy.",
     "cons": "Credit system can be restrictive on lower plans; AI can sometimes feel repetitive.",
-    "verdict": "the best value for high-volume SEO content creators who need speed and Google-ready drafts."
+    "verdict": "the best value for high-volume SEO content creators who need speed and Google-ready drafts.",
+    "scores": {
+      "value": 9.0,
+      "ease_of_use": 8.2,
+      "features": 7.5,
+      "support": 7.0
+    },
+    "pick_if": "You publish SEO content at volume and need fast, Google-ready drafts on a tight budget.",
+    "avoid_if": "You need deep long-form reasoning or brand voice controls — this is a volume tool, not a depth tool."
   },
   {
     "id": "jasper",
@@ -31,10 +47,18 @@
     "price": "$39/mo (verify on site)",
     "bestFor": "Corporate Brand Voice & Marketing",
     "link": "https://www.jasper.ai",
-    "features": "Enterprise AI, Brand Voice Training, Campaigns",
-    "pros": "Strong brand voice features; solid collaboration workflows for marketing teams.",
+    "features": "Enterprise AI, Brand Voice Training, Campaigns, 50+ Templates",
+    "pros": "Strong brand voice features; solid collaboration workflows for marketing teams; built-in image generation.",
     "cons": "Higher price point than competitors; learning curve to get the most from advanced workflows.",
-    "verdict": "the premium choice for established marketing teams who prioritize consistent brand identity."
+    "verdict": "the premium choice for established marketing teams who prioritize consistent brand identity.",
+    "scores": {
+      "value": 6.2,
+      "ease_of_use": 7.0,
+      "features": 8.8,
+      "support": 8.5
+    },
+    "pick_if": "You have a marketing team of 3+ that needs brand voice enforcement and campaign collaboration tools.",
+    "avoid_if": "You're a solo creator or freelancer — the price and complexity are overkill."
   },
   {
     "id": "canva",
@@ -43,10 +67,18 @@
     "price": "$15/mo (Pro; verify on site)",
     "bestFor": "Visual Content & Social Media",
     "link": "https://www.canva.com",
-    "features": "Magic Studio, AI Image Gen, Video Editing",
+    "features": "Magic Studio, AI Image Gen, Video Editing, 100M+ Templates",
     "pros": "Extremely easy for non-designers; massive template library; robust free tier.",
-    "cons": "AI video output is low-res; lacks advanced 'pro' design features found in Adobe.",
-    "verdict": "the indispensable tool for quick, professional social media and marketing assets."
+    "cons": "AI video output is low-res; lacks advanced pro design features found in Adobe.",
+    "verdict": "the indispensable tool for quick, professional social media and marketing assets.",
+    "scores": {
+      "value": 9.5,
+      "ease_of_use": 9.8,
+      "features": 8.0,
+      "support": 8.0
+    },
+    "pick_if": "You create social media, presentations, or marketing assets and you're not a professional designer.",
+    "avoid_if": "You need publication-quality print design or advanced vector work — use Adobe for that."
   },
   {
     "id": "hubspot",
@@ -55,10 +87,18 @@
     "price": "$20/mo starter (scales fast; verify on site)",
     "bestFor": "Scaling SMBs & Sales Teams",
     "link": "https://www.hubspot.com",
-    "features": "Marketing Hub, Sales CRM, Service Hub",
+    "features": "Marketing Hub, Sales CRM, Service Hub, Reporting",
     "pros": "Industry-standard UX; world-class reporting; free starter tools that actually work.",
     "cons": "Prices skyrocket as your lead list grows; customization can be limited on base plans.",
-    "verdict": "the most reliable choice for businesses that need a rock-solid CRM and deep sales data."
+    "verdict": "the most reliable choice for businesses that need a rock-solid CRM and deep sales data.",
+    "scores": {
+      "value": 6.5,
+      "ease_of_use": 8.5,
+      "features": 9.0,
+      "support": 9.0
+    },
+    "pick_if": "You're a scaling SMB with a sales team that needs serious CRM reporting and pipeline visibility.",
+    "avoid_if": "You're an agency or solopreneur — the price jump as you grow is brutal."
   },
   {
     "id": "surferseo",
@@ -67,10 +107,18 @@
     "price": "$89/mo (verify on site)",
     "bestFor": "SEO Content Optimization",
     "link": "https://surferseo.com",
-    "features": "Content Editor, SERP Analyzer, Site Audit",
+    "features": "Content Editor, SERP Analyzer, Site Audit, Keyword Research",
     "pros": "Strong on-page guidance tied to SERP data; actionable content scores; useful for audits.",
     "cons": "One of the more expensive single-purpose tools; can be technical for beginners.",
-    "verdict": "the gold standard for serious SEOs who refuse to publish without a tight brief and score targets."
+    "verdict": "the gold standard for serious SEOs who refuse to publish without a tight brief and score targets.",
+    "scores": {
+      "value": 7.5,
+      "ease_of_use": 7.0,
+      "features": 9.2,
+      "support": 8.0
+    },
+    "pick_if": "You're serious about organic traffic and want SERP-backed content briefs before you write a word.",
+    "avoid_if": "You're a casual blogger or just starting out — the price and complexity aren't justified yet."
   },
   {
     "id": "systemeio",
@@ -79,10 +127,18 @@
     "price": "$27/mo (verify on site)",
     "bestFor": "Solopreneurs & Course Creators",
     "link": "https://systeme.io",
-    "features": "Funnel Builder, Email, Online Courses",
+    "features": "Funnel Builder, Email Marketing, Online Courses, Affiliate Management",
     "pros": "Simplest all-in-one on the market; very generous free tier; fast page loading.",
     "cons": "Course player is visually basic; limited SEO control for blog posts.",
-    "verdict": "the best 'budget-friendly' alternative to ClickFunnels for those starting from scratch."
+    "verdict": "the best budget-friendly alternative to ClickFunnels for those starting from scratch.",
+    "scores": {
+      "value": 9.8,
+      "ease_of_use": 9.2,
+      "features": 7.0,
+      "support": 7.5
+    },
+    "pick_if": "You're a solopreneur or course creator who wants funnels, email, and courses in one affordable tool.",
+    "avoid_if": "You need enterprise reporting or deep CRM integrations — you'll outgrow it quickly."
   },
   {
     "id": "copyai",
@@ -91,10 +147,18 @@
     "price": "$36/mo (verify on site)",
     "bestFor": "Sales Workflows & GTM Teams",
     "link": "https://www.copy.ai",
-    "features": "Workflow Automation, Chat, Bulk Generation",
+    "features": "Workflow Automation, Sales Copy, Bulk Generation, Chat",
     "pros": "Excellent at automating repetitive sales tasks; high-quality output for short-form copy.",
     "cons": "No built-in SEO tools; manual editing often required for long-form grammar.",
-    "verdict": "the smart pick for sales teams looking to automate their go-to-market messaging."
+    "verdict": "the smart pick for sales teams looking to automate their go-to-market messaging.",
+    "scores": {
+      "value": 7.0,
+      "ease_of_use": 8.5,
+      "features": 7.8,
+      "support": 7.5
+    },
+    "pick_if": "Your team writes repetitive sales emails, outreach, and GTM copy at scale.",
+    "avoid_if": "You need long-form research, SEO content, or deep reasoning — it's short-form focused."
   },
   {
     "id": "descript",
@@ -103,10 +167,18 @@
     "price": "$15/mo (verify on site)",
     "bestFor": "Podcasters & Video Creators",
     "link": "https://www.descript.com",
-    "features": "Text-based Editing, Overdub, Studio Sound",
+    "features": "Text-based Editing, Overdub Voice Clone, Studio Sound, Screen Recording",
     "pros": "Edit video by deleting text (game changer); amazing noise removal; built-in recorder.",
     "cons": "Can be buggy on longer video files; clunky for traditional frame-by-frame editing.",
-    "verdict": "the future of editing for anyone who works with dialogue-heavy content like podcasts."
+    "verdict": "the future of editing for anyone who works with dialogue-heavy content like podcasts.",
+    "scores": {
+      "value": 8.5,
+      "ease_of_use": 8.0,
+      "features": 8.8,
+      "support": 7.5
+    },
+    "pick_if": "You edit podcasts, interview videos, or any dialogue-heavy content and hate traditional timelines.",
+    "avoid_if": "You do cinematic or B-roll heavy editing — this isn't a replacement for Premiere or Final Cut."
   },
   {
     "id": "claude",
@@ -115,21 +187,37 @@
     "price": "~$20/mo Pro (verify on site)",
     "bestFor": "Advanced Writing & Deep Research",
     "link": "https://claude.ai",
-    "features": "200K Context, Artifacts, Strong reasoning",
+    "features": "200K Context Window, Artifacts, Deep Research, Code, Analysis",
     "pros": "Natural, nuanced writing; huge context for long docs; excellent for research and editing.",
-    "cons": "No native image generation; usage limits and pricing vary by plan and region.",
-    "verdict": "the best general AI assistant for users who want depth on drafts, research, and long documents."
+    "cons": "No native image generation; usage limits vary by plan; not a brand-voice team tool.",
+    "verdict": "the best general AI assistant for users who want depth on drafts, research, and long documents.",
+    "scores": {
+      "value": 9.0,
+      "ease_of_use": 8.5,
+      "features": 8.5,
+      "support": 8.0
+    },
+    "pick_if": "You need an AI that can reason, research, and write long-form content that doesn't sound like a robot.",
+    "avoid_if": "You need brand voice training, team approval workflows, or built-in image generation."
   },
   {
     "id": "midjourney",
     "name": "Midjourney",
     "category": "design-visual",
     "price": "~$10/mo (verify on site)",
-    "bestFor": "Professional AI Art & Design",
+    "bestFor": "Professional AI Art & Campaign Visuals",
     "link": "https://www.midjourney.com",
-    "features": "High-quality image generation, style control",
+    "features": "High-quality image generation, Style control, Variations, Upscaling",
     "pros": "Unrivaled artistic quality; strong style control; great for concept and campaign visuals.",
-    "cons": "Focused on imagery—not a writing or CRM tool; workflow is different from typical SaaS apps.",
-    "verdict": "the standout choice for creators who need professional-grade, art-directed AI imagery."
+    "cons": "Discord-based workflow is unusual; focused on imagery only — no editing or templates.",
+    "verdict": "the standout choice for creators who need professional-grade, art-directed AI imagery.",
+    "scores": {
+      "value": 9.2,
+      "ease_of_use": 6.0,
+      "features": 8.0,
+      "support": 6.5
+    },
+    "pick_if": "You need stunning, art-directed AI images for campaigns, concepts, or creative work.",
+    "avoid_if": "You want an all-in-one design tool with templates — use Canva instead."
   }
 ]
